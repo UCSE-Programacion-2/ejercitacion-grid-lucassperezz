@@ -77,28 +77,38 @@ h3 {
   object-fit: cover;
 }
 
-/* DESKTOP */
+/* TABLET */
 @media (min-width: 768px) {
   .container {
     padding: 3rem 2rem;
   }
 
   .exercice {
+    display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: start;
     gap: 2rem;
   }
 
-  .exercice-complete,
   .excercice-incomplete {
-    max-width: none;
-  }
-
-  .excercice-incomplete {
+    display: grid;
     grid-template-columns: 1fr 1fr;
   }
 
   h3 {
     font-size: 2.8rem;
+  }
+}
+
+/* DESKTOP */
+@media (min-width: 1024px) {
+  .exercice {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .excercice-incomplete {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
